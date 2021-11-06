@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class BoxTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        GameObject gameObject = GameObject.FindGameObjectWithTag("GameManager");
+        gameObject.GetComponent<GameManager>().PlayerLost();
+    } 
 }
