@@ -11,10 +11,13 @@ public class GameManager : MonoBehaviour
     private float timeCountFloat;
     private int timeCountInt;
     public TextMeshProUGUI timer;
+    public TextMeshProUGUI gameOver;
     public void PlayerLost()
     {
         Debug.Log("Player has lost");
         Time.timeScale = 0;
+        gameOver.GetComponent<TextMeshProUGUI>().enabled = true;
+
     }
 
     private void Update()
