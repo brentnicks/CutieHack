@@ -507,6 +507,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &757321248
@@ -567,6 +568,10 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of f3586bb (306)
 --- !u!114 &757321251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -678,11 +683,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3898933319564207261, guid: af39c1121720893459d559e857df896d, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
       value: -55.26
       objectReference: {fileID: 0}
     - target: {fileID: 3898933319564207261, guid: af39c1121720893459d559e857df896d, type: 3}
       propertyPath: m_LocalPosition.y
       value: 8.72
+=======
+      value: -4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3898933319564207261, guid: af39c1121720893459d559e857df896d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.7
+>>>>>>> parent of f3586bb (306)
       objectReference: {fileID: 0}
     - target: {fileID: 3898933319564207261, guid: af39c1121720893459d559e857df896d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1438,11 +1451,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9092332414353084404, guid: c9f48a852ce98ca4db88a9e4ae5dc5ad, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
       value: -47.67
       objectReference: {fileID: 0}
     - target: {fileID: 9092332414353084404, guid: c9f48a852ce98ca4db88a9e4ae5dc5ad, type: 3}
       propertyPath: m_LocalPosition.y
       value: 8.33
+=======
+      value: 3.3111622
+      objectReference: {fileID: 0}
+    - target: {fileID: 9092332414353084404, guid: c9f48a852ce98ca4db88a9e4ae5dc5ad, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.157307
+>>>>>>> parent of f3586bb (306)
       objectReference: {fileID: 0}
     - target: {fileID: 9092332414353084404, guid: c9f48a852ce98ca4db88a9e4ae5dc5ad, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1491,11 +1512,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2991076915952127153, guid: 790acc12cfaf4584798380e897f7efd8, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
       value: -52.15
       objectReference: {fileID: 0}
     - target: {fileID: 2991076915952127153, guid: 790acc12cfaf4584798380e897f7efd8, type: 3}
       propertyPath: m_LocalPosition.y
       value: 9.28
+=======
+      value: -1.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991076915952127153, guid: 790acc12cfaf4584798380e897f7efd8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.41
+>>>>>>> parent of f3586bb (306)
       objectReference: {fileID: 0}
     - target: {fileID: 2991076915952127153, guid: 790acc12cfaf4584798380e897f7efd8, type: 3}
       propertyPath: m_LocalPosition.z
