@@ -6,11 +6,8 @@ public class Player1Movement : MonoBehaviour
 {
     Rigidbody2D rb;
     public float horizontalSpeed;
-<<<<<<< Updated upstream
-=======
     bool canJump = true;
     private Vector3 m_Velocity = Vector3.zero;
->>>>>>> Stashed changes
     // Start is called before the first frame update
     void Start()
     {
@@ -23,17 +20,6 @@ public class Player1Movement : MonoBehaviour
         // And then smoothing it out and applying it to the character
         rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref m_Velocity, 0.05f);
 
-<<<<<<< Updated upstream
-        if (Input.GetKey(KeyCode.A))
-        {
-            rb.velocity = new Vector3(-horizontalSpeed, rb.velocity.y, 0);
-        }
-        if (Input.GetKeyUp(KeyCode.A))
-        {
-            rb.velocity = new Vector3(0, 0, 0);
-        }
-    }
-=======
 
         if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W)) && canJump)
         {
@@ -45,5 +31,4 @@ public class Player1Movement : MonoBehaviour
     {
             canJump = true;
     }
->>>>>>> Stashed changes
 }
