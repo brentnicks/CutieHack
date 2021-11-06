@@ -6,31 +6,29 @@ public class Player1Movement : MonoBehaviour
 {
     Rigidbody2D rb;
     public float horizontalSpeed;
+    bool canJump = true;
+    private Vector3 m_Velocity = Vector3.zero;
     // Start is called before the first frame update
     void Start()
     {
         rb = GameObject.Find("Player1").GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.D))
-        {
-            rb.velocity = new Vector3(horizontalSpeed, rb.velocity.y, 0);
-        }
-        if (Input.GetKeyUp(KeyCode.D))
-        {
-            rb.velocity = new Vector3(0, 0, 0);
-        }
+        Vector3 targetVelocity = new Vector2(horizontalSpeed * 10f * Input.GetAxisRaw("Horizontal1"), rb.velocity.y);
+        // And then smoothing it out and applying it to the character
+        rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref m_Velocity, 0.05f);
 
-        if (Input.GetKey(KeyCode.A))
+
+        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W)) && canJump)
         {
-            rb.velocity = new Vector3(-horizontalSpeed, rb.velocity.y, 0);
+            rb.AddForce(new Vector2(rb.velocity.x, 500));
+            canJump = false;
         }
-        if (Input.GetKeyUp(KeyCode.A))
-        {
-            rb.velocity = new Vector3(0, 0, 0);
-        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+            canJump = true;
     }
 }
