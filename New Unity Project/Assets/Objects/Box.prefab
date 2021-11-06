@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1272568859}
   - component: {fileID: 1272568858}
   m_Layer: 0
-  m_Name: Falling Object
+  m_Name: Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
