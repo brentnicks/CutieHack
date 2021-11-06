@@ -21,7 +21,7 @@ public class Player1Movement : MonoBehaviour
         rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref m_Velocity, 0.05f);
 
 
-        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W)) && canJump)
+        if (Input.GetKeyDown(KeyCode.W) && canJump)
         {
             rb.AddForce(new Vector2(rb.velocity.x, 500));
             canJump = false;
