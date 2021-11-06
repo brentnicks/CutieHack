@@ -1049,6 +1049,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5053788193747590314, guid: 62ed3c22cbeba9140aa7eb5e3c377f7d, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: f45f7cfb79926fd40b66a830f3c496df, type: 2}
     - target: {fileID: 5053788193747590315, guid: 62ed3c22cbeba9140aa7eb5e3c377f7d, type: 3}
       propertyPath: m_Name
       value: Player1
@@ -1110,6 +1114,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player2
       objectReference: {fileID: 0}
+    - target: {fileID: 8695356670715455689, guid: 63b702799d6a9904babf258451eaaed2, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: f45f7cfb79926fd40b66a830f3c496df, type: 2}
     - target: {fileID: 8695356670715455733, guid: 63b702799d6a9904babf258451eaaed2, type: 3}
       propertyPath: m_RootOrder
       value: 9
