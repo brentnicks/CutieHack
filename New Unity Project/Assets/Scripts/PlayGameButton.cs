@@ -7,8 +7,6 @@ public class PlayGameButton : MonoBehaviour
 {
     public void PlayGame()
     {
-        Debug.Log("Scene");
         SceneManager.LoadScene(1);
-        Debug.Log("scene");
     }
 }
