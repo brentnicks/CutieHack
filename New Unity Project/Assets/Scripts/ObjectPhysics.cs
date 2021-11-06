@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class ObjectPhysics : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnCollisionStay2D(Collision2D collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (collision.gameObject.tag == "Falling Object")
+        {
+            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(100,100));
+        }
     }
 }
