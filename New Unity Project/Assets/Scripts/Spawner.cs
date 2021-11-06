@@ -5,7 +5,6 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public GameObject[] spawnees;
-    public GameObject box;
     double timer;
     public double spawnDelay;
 
@@ -30,6 +29,6 @@ public class Spawner : MonoBehaviour
     {
         randomInt = Random.Range(0, spawnees.Length);
         Range = Random.Range(-7.0f, 7.0f);
-        Instantiate(box, new Vector3 (gameObject.transform.position.x + Range, gameObject.transform.position.y, gameObject.transform.position.z) , gameObject.transform.rotation);
+        Instantiate(spawnees[randomInt], new Vector3 (gameObject.transform.position.x + Range, gameObject.transform.position.y, gameObject.transform.position.z) , gameObject.transform.rotation);
     }
 }
