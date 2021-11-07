@@ -12,11 +12,18 @@ public class GameManager : MonoBehaviour
     private int timeCountInt;
     public TextMeshProUGUI timer;
     public TextMeshProUGUI gameOver;
+    public Button menuButton;
     public Spawner mySpawner;
+    bool isPaused = false;
+    bool isGameOver = false;
     public void PlayerLost()
     {
         Time.timeScale = 0;
         gameOver.GetComponent<TextMeshProUGUI>().enabled = true;
+        menuButton.GetComponent<Image>().enabled = true;
+        menuButton.GetComponent<Button>().enabled = true;
+        menuButton.enabled = true;
+        isGameOver = true;
 
     }
 
@@ -45,6 +52,18 @@ public class GameManager : MonoBehaviour
         if (timeCountInt >= 32)
         {
             mySpawner.spawnDelay = 1.5f;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape) && !isPaused && isGameOver != true)
+        {
+            Time.timeScale = 0;
+            isPaused = true;
+        }
+
+        else if (Input.GetKeyDown(KeyCode.Escape) && isPaused && isGameOver != true)
+        {
+            Time.timeScale = 1;
+            isPaused = false;
         }
     }
 }
