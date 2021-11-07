@@ -6,8 +6,14 @@ public class EndTrigger : MonoBehaviour
 {
      private void OnCollisionEnter2D(Collision2D collision)
     {
-        GameObject gameObject = GameObject.FindGameObjectWithTag("GameManager");
-        gameObject.GetComponent<GameManager>().PlayerLost();
-        Debug.Log("You Lose.");
+        if (collision.gameObject.tag == "Platform" || collision.gameObject.tag == "Player")
+        {
+            GameObject gameObject = GameObject.FindGameObjectWithTag("GameManager");
+            gameObject.GetComponent<GameManager>().PlayerLost();
+        }
+        if (collision.gameObject.tag == "Falling Object")
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }
