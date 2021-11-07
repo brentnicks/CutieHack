@@ -472,8 +472,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226690237}
   m_CullTransparentMesh: 1
-<<<<<<< Updated upstream
-=======
 --- !u!1 &390614746
 GameObject:
   m_ObjectHideFlags: 0
@@ -5337,7 +5335,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1 &411099420
 GameObject:
   m_ObjectHideFlags: 0
@@ -5371,14 +5368,10 @@ MonoBehaviour:
   - {fileID: 3898933319564207258, guid: af39c1121720893459d559e857df896d, type: 3}
   - {fileID: 6822212555623081625, guid: 790acc12cfaf4584798380e897f7efd8, type: 3}
   - {fileID: 1437440183492227351, guid: c9f48a852ce98ca4db88a9e4ae5dc5ad, type: 3}
-<<<<<<< Updated upstream
-  spawnDelay: 1.3
-=======
   - {fileID: 8717722698286799340, guid: eb2f5cc60c05d0540bf7f1e05d10432a, type: 3}
   - {fileID: 7641412646690143676, guid: aa0c16bffe62dc042a03070b538d8034, type: 3}
   - {fileID: 2367405884404067207, guid: b380e40dbf11fe14bb171b0e56e822a4, type: 3}
   spawnDelay: 4
->>>>>>> Stashed changes
 --- !u!4 &411099422
 Transform:
   m_ObjectHideFlags: 0
@@ -5424,11 +5417,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: {fileID: 781360447}
   gameOver: {fileID: 226690239}
-<<<<<<< Updated upstream
-=======
   menuButton: {fileID: 199131943}
   mySpawner: {fileID: 411099421}
->>>>>>> Stashed changes
 --- !u!4 &428713299
 Transform:
   m_ObjectHideFlags: 0
