@@ -6,7 +6,6 @@ TagManager:
   tags:
   - GameManager
   - Falling Object
-  - Platform
   layers:
   - Default
   - TransparentFX
