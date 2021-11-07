@@ -29,6 +29,9 @@ public class Player2Movement : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        canJump = true;
+        if (collision.gameObject.tag == "Platform")
+        {
+            canJump = true;
+        }
     }
 }
