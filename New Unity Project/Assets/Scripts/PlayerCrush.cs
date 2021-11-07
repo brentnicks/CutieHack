@@ -7,9 +7,9 @@ public class PlayerCrush : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Falling Object")
         {
-            Debug.Log("Player Hit");
+            GameObject.Find("GameManager").GetComponent<GameManager>().PlayerLost();
         }
     }
 }
